@@ -134,7 +134,8 @@ class _AboutScreenState extends State<AboutScreen> {
                           onPressed: () {
                             launchUrl(
                               Uri.parse(
-                                'https://github.com/Sangwan5688/BlackHole',
+                                'https://github.com/MMustafazia/BlackHoleMXCode.git',
+                                // 'https://github.com/Sangwan5688/BlackHole',
                               ),
                               mode: LaunchMode.externalApplication,
                             );

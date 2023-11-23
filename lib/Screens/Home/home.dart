@@ -554,14 +554,14 @@ class _HomePageState extends State<HomePage> {
                     ),
                     destinations: sectionsToShow.map((e) {
                       switch (e) {
-                        case 'Home':
+                        case 'HomeM':
                           return NavigationRailDestination(
                             icon: const Icon(Icons.home_rounded),
                             label: Text(AppLocalizations.of(context)!.home),
                           );
                         case 'Top Charts':
                           return NavigationRailDestination(
-                            icon: const Icon(Icons.trending_up_rounded),
+                            icon: const Icon(Icons.music_note_outlined),
                             label: Text(
                               AppLocalizations.of(context)!.topCharts,
                             ),
@@ -678,7 +678,7 @@ class _HomePageState extends State<HomePage> {
           );
         case 'Top Charts':
           return CustomBottomNavBarItem(
-            icon: const Icon(Icons.trending_up_rounded),
+            icon: const Icon(Icons.music_note_outlined),
             title: Text(AppLocalizations.of(context)!.topCharts),
             selectedColor: Theme.of(context).colorScheme.secondary,
           );
