@@ -20,6 +20,7 @@
 import 'dart:io';
 
 import 'package:blackhole/CustomWidgets/drawer.dart';
+import 'package:blackhole/Screens/Library/downloader.dart';
 import 'package:blackhole/Screens/Library/liked.dart';
 import 'package:blackhole/Screens/LocalMusic/downed_songs.dart';
 import 'package:blackhole/Screens/LocalMusic/downed_songs_desktop.dart';
@@ -102,10 +103,24 @@ class _LibraryPageState extends State<LibraryPage> {
           },
         ),
         LibraryTile(
+          title: AppLocalizations.of(context)!.privacygal,
+          icon: Icons.folder,
+          onTap: () {
+            Navigator.pushNamed(context, '/downloads');
+          },
+        ),
+        LibraryTile(
           title: AppLocalizations.of(context)!.downs,
           icon: Icons.download_done_rounded,
           onTap: () {
             Navigator.pushNamed(context, '/downloads');
+          },
+        ),
+        LibraryTile(
+          title: AppLocalizations.of(context)!.downl,
+          icon: Icons.downloading_outlined,
+          onTap: () {
+            Navigator.pushNamed(context, '/downloader');
           },
         ),
         LibraryTile(
